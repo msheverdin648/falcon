@@ -1,0 +1,689 @@
+@import '_fonts'
+
+
+html
+    scroll-behavior: smooth
+
+.block__header
+    font-size: 32px;
+    +roboblack
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center
+    &.first
+        margin-bottom: 85px
+        text-align: start
+    &.third
+        margin-bottom: 80px
+    &.forth
+        margin-bottom: 80px
+    &.fifth
+        margin-bottom: 60px
+    &.sixth
+        font-size: 34px
+        text-align: start
+    &.seventh
+        font-size: 34px
+        margin-bottom: 40px
+
+
+    
+.orange__text
+  font-size: 22px;
+  +robobold
+  color: rgb(240, 113, 61);
+  font-weight: bold;
+  text-align: center
+  &.first
+      margin-right: 69px
+
+
+.header
+    overflow: hidden
+    padding: 55px 0px 237px 0px
+    background: url(../../images/man.png), url(../../images/cubes.png),
+    linear-gradient(180deg, rgba(243,245,249,1) 0%, rgba(208,217,230,1) 100%)
+    background-repeat: no-repeat, no-repeat
+    background-position:     left -130px bottom 0px, right -230px bottom -10px, center
+    &__line
+        margin-bottom: 65px
+        &__block
+            display: flex
+            flex-direction: row
+            align-items: center
+    &__logo
+        margin-top: -10px
+        height: 55px
+    &__slash
+        font-size: 60px;
+        +roboreg
+        color: rgb(252, 199, 28);
+        margin-left: 10px
+    
+    &__text
+        margin-left: 10px
+        +robomed
+    &__number
+        text-align: end
+        font-size: 24px;
+        +gpbold
+        color: rgb(0, 0, 0);
+
+    &__description
+        text-align: end
+        font-size: 14px;
+        +gpbold
+        color: rgb(240, 113, 61);
+    &__list
+        &__item
+            list-style-type: none
+            &::before
+                content: " "
+                position: relative
+                display: block
+                width: 10px
+                height: 10px
+                background: url(../../images/arrow2.svg)
+                left: -15px
+                top: 18px
+                font-size: 18px;
+                font-family: "Roboto";
+                color: rgb(0, 0, 0);
+
+
+.stat
+    padding: 80px 0px 50px 0px
+    background: linear-gradient(180deg, rgba(63, 83, 111, 0.37) 100%, rgba(206, 215, 229, 0.3) 100%), url(../../images/bg1.jpg);
+    background-repeat: no-repeat, no-repeat
+    background-size: cover, cover
+    background-position: center, center
+    &__num
+        text-align: center
+        color: #ffffff
+        +robobold
+    
+    &__line
+        border: 1px solid #ed573b
+
+    &__description
+        text-align: center
+        color: #ffffff
+        +robomed
+
+.reasons
+    padding: 90px 0 100px 0
+    background-color: #eef3f7
+    &__small-text
+        text-align: center
+        font-size: 24px;
+        +robobold
+
+
+    &__ico
+        margin: 70px 0px 35px 0
+    &__description
+        text-align: center
+        margin-bottom: 80px
+        font-size: 18px;
+        +roboreg
+        color: rgb(0, 0, 0);
+
+.how
+    padding: 90px 0px 90px 0px
+    &__list
+        counter-reset: myCounter
+        &__item
+            list-style: none
+            margin-bottom: 40px
+            font-size: 18px;
+            +roboreg
+            color: rgb(0, 0, 0);
+            &::before
+                counter-increment: myCounter
+                content: counter(myCounter)
+                border: 2px solid #f29301
+                border-radius: 100%
+                display: inline-block
+                text-align: center
+                line-height: 43px
+                width: 45px
+                height: 45px
+                font-size: 18px;
+                +robomed
+                color: rgb(0, 0, 0);
+                margin-right: 15px
+        &__small
+            &__item
+                list-style: none
+                margin: 0
+                line-height: 24px
+                &::before
+                    content: "."
+                    color: #f0713d
+                    font-size: 30px
+                    position: relative
+                    top: -4px
+                    left: -4px
+
+    &__small-text
+        @extend .reasons__small-text
+        text-align: center
+        margin-top: 20px
+
+.actions
+    background-color: #eef3f7
+    padding: 100px 0px 110px 0px
+    &__item
+        display: flex
+        align-items: center
+        padding: 0px 20px
+        margin-bottom: 23px
+        border-left: 2px solid #fff
+        height: 115px
+        font-size: 18px;
+        font-family: "Roboto";
+        color: rgb(0, 0, 0);
+.feedbacks
+    text-align: center
+    padding: 120px 0px 130px 0px
+    &__avatar
+        display: block
+        width: 128px
+        height: 128px
+        margin: 0 auto
+        margin-bottom: 20px
+    &__autor
+        font-size: 22px;
+        +roboblack
+        color: rgb(243, 152, 4);
+    &__sum
+        font-size: 22px;
+        +roboblack
+    &__num
+        color: #f39804
+    &__company
+        font-size: 16px;
+        +robomed
+        margin-bottom: 25px
+    &__text
+        font-size: 16px;
+        +roboreg
+
+.company
+    text-align: center
+    background-color: #eef3f7
+    padding: 85px 0px 95px 0px
+    &__small-text
+        font-size: 24px;
+        +robomed
+    &__logo
+        display: flex
+        width: 257px
+        height: 186px
+        background-color: #fff
+        margin-bottom: 42px
+        align-items: center
+        justify-content: center
+.footer
+    padding: 130px 0px 155px 0px
+    &__service
+        &-header
+            font-size: 20px;
+            +roboblack
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+        &-text
+            font-size: 18px;
+            color: rgb(0, 0, 0);  
+            +roboreg
+    &__block
+        margin-right: 63px
+        &::before
+            content: ""
+            display: block
+            width: 55px
+            height: 50px
+            position: absolute
+            top: 0
+            left: -55px
+            background-repeat: no-repeat
+            background-position: center
+        &:nth-child(1)
+            &::before                       
+                background: url(../../images/ico5.png)
+        &:nth-child(2)
+            &::before     
+                background: url(../../images/ico6.png)
+                background-repeat: no-repeat
+                background-position: center
+        &:nth-child(3) 
+            &::before     
+                background: url(../../images/ico7.png) 
+                background-repeat: no-repeat
+                background-position: center       
+    &__logo
+        margin-right: -69px;
+        margin-bottom: 89px;
+    &__text
+        text-align: center
+        margin-bottom: 40px
+        margin-top: 20px
+        +robomed
+    &__button
+        
+        @extend .form__button
+        margin: 0 auto
+        &:focus
+            outline: none  
+        &__in
+            border: none
+            background: transparent
+            font-size: 14px;
+            +gpblack
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            &:focus,
+            &:active
+                outline: none  
+.copyright
+    padding: 40px 0px 30px 0px
+    background-color: #7a7f88
+    &__text
+        text-align: center  
+        font-size: 12px;
+        +mpreg
+        color: rgb(255, 255, 255);
+
+
+             
+
+
+
+
+
+//Form settings       
+.form
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 21px 24px 0px rgba(0, 1, 1, 0.09);
+    padding: 40px 40px 55px 40px
+    position: absolute
+    &::before
+        content: ""
+        display: block
+        width: 36px
+        height: 36px
+        background: url(../../images/arrow.svg)
+        background-repeat: no-repeat
+        position: absolute
+        top: 152px;
+        left: -50px;
+
+    &.header__form
+        top: -390px;
+        left: 50px;
+    &__slogan
+        +gpblack
+        color: rgb(240, 113, 61);
+        text-transform: uppercase;
+        text-align: center
+        font-size: 18px;
+        margin-bottom: 30px
+            
+    &__description
+        +gpm
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        margin-bottom: 30px
+        font-size: 21px
+        text-align: center
+        font-size: 21px
+        &.header__form
+           margin: 0 
+
+    &__now
+        font-size: 18px;
+        +gpm
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+    &__label
+        font-size: 14px;
+        +gpm
+        color: rgb(0, 0, 0);
+    &__input
+        width: 100%
+        border: none
+        border-bottom: 1px solid #e6ddbc
+        margin-bottom: 30px
+        +gpr
+    &__agree
+        margin-bottom: 30px
+        &__check
+            display: none
+            &:checked
+                &~.form__agree__custom-check
+                    background: url(../../images/check.svg)
+                    background-position: center
+                    background-repeat: no-repeat
+
+            
+        &__custom-check
+            display: block
+            width: 25px
+            height: 25px
+            border: 1px solid #e6ddbc
+            border-radius: 5px
+            margin-right: 14px
+            
+    &__consent
+        font-size: 14px;
+        +gpr
+        color: rgb(0, 0, 0);
+    &__button
+        padding: 20px 70px
+        border-radius: 50px
+        border: 1px solid  #ff9d08
+        background: rgb(255,210,34);
+        background: linear-gradient(180deg, rgba(255,210,34,1) 0%, rgba(242,144,0,1) 100%); 
+        box-shadow: 0px 13px 27px 0px rgba(254, 152, 5, 0.75);
+        color: #ffffff
+        font-size: 14px;
+        +gpblack
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        &.header__form
+            font-size: 15px;
+        &:active
+            outline: none  
+            box-shadow: 0px 13px 10px 0px rgba(254, 152, 5, 0.75);
+            padding: 19px 69px
+
+.how
+    &__form
+        @extend .form
+        position: absolute
+        top: -860px;
+        left: 0px;
+        &__slogan
+            @extend .form__slogan
+        &__description
+            @extend .form__description
+        &__now
+            @extend .form__now
+        &__label
+            @extend .form__label
+        &__input
+            @extend .form__input
+        &__agree
+            @extend .form__agree
+            &__check
+                @extend .form__agree__check
+            &__custom-check
+                @extend .form__agree__custom-check
+        &__consent
+            @extend .form__consent
+        &__button 
+            @extend .form__button  
+
+
+
+
+.swiper
+    &-slide
+        display: flex
+        flex-direction: column
+    &-button
+        &-next
+            &-custom
+                display: block
+                width: 50px 
+                height: 50px
+                background: url("../../images/next.svg")
+                background-position: center
+                background-repeat: no-repeat
+                position: absolute
+                top: 50%
+                right: -14px
+                z-index: 20
+
+        &-prev
+            &-custom
+                display: block
+                width: 50px 
+                height: 50px
+                background: url("../../images/prev.svg")
+                background-position: center
+                background-repeat: no-repeat
+                position: absolute
+                top: 50%
+                left: -14px
+                z-index: 20
+                &:hover
+                    cursor: pointer
+
+
+
+
+
+
+
+@media screen and ( max-width: 1199px )
+    .header
+        padding-bottom: 600px
+        background-position: left -100px bottom -50px, right -230px bottom -10px, center;
+        &__slash
+            margin-left: 20px
+        &__text
+            margin-left: 10px
+
+    .form
+        &.header__form
+            position: absolute
+            top: 50px
+            left: -6%
+
+    .block__header
+        &.sixth
+            font-size: 30px
+        &.seventh
+            text-align: center
+    .footer
+        &__block
+            margin-right: 53px
+        &__logo
+            margin-bottom: 85px
+            margin-right: 5px
+    .company
+        &__block
+            align-items: center
+
+
+@media screen and ( max-width: 991px  )
+    .header
+        &__slash
+            margin-left: 30px
+        &__logo
+            margin-top: 5px
+        &__number
+            font-size: 22px
+
+    .how
+        padding-bottom: 645px
+        &__form
+            position: absolute
+            top: 175px;
+            left: 0%;
+    .block__header
+        &.sixth
+            font-size: 28px
+        &.seventh
+            font-size: 30px
+            text-align: start
+
+
+@media screen and ( max-width:768px  )
+    .block__header
+        font-size: 28px
+        &.sixth
+            font-size: 28px
+        &.seventh
+            font-size: 28px
+            text-align: start
+            margin-bottom: 30px
+            margin-top: 30px
+    .header
+        padding-bottom: 570px
+        background-position: left -200px top 250px, right -230px bottom -10px, center;
+
+        &__line
+            &__block
+                display: flex
+                flex-direction: column
+
+        &__slash
+            display: none
+
+        .form
+            &.header__form
+                position: absolute
+                top: 0;
+                left: 22%;
+        &__number
+            font-size: 18px
+        &__description
+            font-size: 12px
+    .reasons
+        &__ico
+            margin-top: 0px
+        &__description
+            margin-bottom: 40px
+    .how
+        padding-bottom: 635px
+        &__form
+            position: absolute
+            top: 230px;
+            right: 0
+            &::before
+                top: 200px
+
+    .company
+        &__block
+            align-items: center
+    .footer
+        &__logo
+            margin-bottom: 70px
+
+@media screen and ( max-width: 576px  )
+    .header
+        background-size: 60%, 80%, 100%
+        background-position: left -120px bottom 400px, left 60px bottom 0px, center 
+        padding-bottom: 670px
+        &__line
+            &__block
+                flex-direction: column
+                align-items: start
+        &__logo
+            width: 80%
+            height: 40%
+            margin-top: -30px
+        &__slash 
+            display: none
+        &__number 
+            font-size: 14px
+        &__text
+            text-align: start
+            font-size: 14px
+        &__block
+            align-self: flex-start
+            margin-left: 0
+        .form
+            &.header__form
+                top: 0%;
+                left: 0;
+                &::before
+                    visibility: hidden
+    .stat
+        &__block
+            display: flex
+            flex-direction: column
+            align-items: center
+            &__item
+                &:nth-child(1)
+                    order: 2;
+                &:nth-child(2)
+                    order: 1;
+                &:nth-child(3)
+                    order: 3;
+                &:nth-child(4)
+                    order: 4;
+    .block__header
+        font-size: 24px
+        &.first
+            text-align: start
+            font-size: 24px
+        &.sixth
+            font-size: 24px
+            text-align: center
+        &.seventh
+            font-size: 24px
+            margin-top: 0
+            margin-bottom: 20px
+            text-align: center
+
+    .reasons
+        &__small-text
+            font-size: 18px
+            margin-top: 20px
+        &__description
+            margin: 0
+        &__ico
+            margin-top: 30px
+
+    .orange__text
+            font-size: 18px
+            &.first
+                text-align: start
+    .how
+        padding-bottom: 680px
+        &__form
+            top: 193px;
+            left: 0;
+            &::before
+                visibility: hidden
+    .actions
+        &__item
+            font-size: 16px
+    .company
+        &__small-text
+            font-size: 18px
+    .footer
+        background-color: #eef3f7
+        padding-top: 0
+        padding-bottom: 100px
+        &__service
+            &-header
+                font-size: 18px
+            &-text
+                font-size: 18px
+        &__block2
+            display: flex
+            flex-direction: column
+        &__logo 
+            margin-top: 50px
+            margin-bottom: 10px
+        &__text
+            font-size: 16px
+            
+                    
+        
+        
+
+@media screen and (prefers-reduced-motion: reduce) 
+	html 
+		scroll-behavior: auto
+	
+
+    
+
+    
+    
+    
